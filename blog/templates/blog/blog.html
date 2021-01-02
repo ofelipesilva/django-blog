@@ -10,7 +10,7 @@
   <meta name="description" content="Blog onde compartilho os meus conhecimentos e descobertas na carreira do mundo Dev.">
   <meta name="author" content="Felipe Silva">
 
-  <title>Bem vindo! Vamos juntos desbravar o mundo Dev.</title>
+  <title>Um pouco sobre Felipe Silva.</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -41,13 +41,13 @@
             <a class="nav-link" href="{% url 'blog' %}">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="{% url 'about' %}">Sobre</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Sample Post</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="{% url 'contact' %}">Contato</a>
           </li>
         </ul>
       </div>

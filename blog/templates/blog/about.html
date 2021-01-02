@@ -7,13 +7,13 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="{{ post.summary }}">
+  <meta name="description" content="Blog onde compartilho os meus conhecimentos e descobertas na carreira do mundo Dev.">
   <meta name="author" content="Felipe Silva">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Bem vindo! Vamos juntos desbravar o mundo Dev.</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="{% static 'css/clean-blog.css' %}" rel="stylesheet">
+  <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
 
 </head>
 
@@ -55,33 +55,30 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url({% static 'img/post-tech-bg.jpg' %})">
+  <header class="masthead" style="background-image: url({% static 'img/about-bg.jpg' %})">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h1>{{ post.title }}</h1>
-            <h2 class="subheading">{{ post.summary }}</h2>
-            <span class="meta">Postado por
-              <a href="#social-media">{{ post.author.get_full_name }}</a>
-              em {{ post.created }}</span>
+          <div class="page-heading">
+            <h1>Felipe Silva</h1>
+            <span class="subheading">Esse sou eu.</span>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Post Content -->
-  <article>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          {{ post.body|safe }}
-        </div>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Estudante da Licenciatura em Matemática, nos últimos meses estive estudando desenvolvimento com Python, Django e PostgreSQL.</p>
+        <p>Por natureza, eu sou muito curioso e estou sempre aprendendo novas coisas. Minhas paixões incluem resolver problemas e ajudar as pessoas a entenderem estes problemas.</p>
+        <p>Atualmente o meu foco está em aprofundar os meus conhecimentos com o framework Django e aprofundar meus conhecimentos com relação a estrutura de dados. Objetivos futuros são automação, unit testing e database design.</p>
       </div>
     </div>
-  </article>
+  </div>
 
   <hr>
 
